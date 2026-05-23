@@ -1,0 +1,4 @@
+debug: false
+default-menu-size: 54
+placeholder-api: true
+auto-register-menu-commands: true

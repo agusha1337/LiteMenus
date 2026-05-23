@@ -1,0 +1,27 @@
+name: LiteMenus
+version: '1.0'
+main: ru.agusha.menus.LiteMenus
+api-version: '1.16'
+author: gde_agusha
+description: 'Modern animated menus for Minecraft servers'
+softdepend:
+  - PlaceholderAPI
+commands:
+  litemenus:
+    description: main command
+    usage: /<command> <reload|open>
+    aliases:
+      - lm
+permissions:
+  litemenus.admin:
+    description: Full access to lm
+    default: op
+    children:
+      litemenus.open: true
+      litemenus.reload: true
+  litemenus.open:
+    description: Allows opening LiteMenus menus
+    default: op
+  litemenus.reload:
+    description: Allows reloading LiteMenus
+    default: op
